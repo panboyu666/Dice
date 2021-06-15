@@ -12,17 +12,31 @@
     android:background="@drawable/background1">
 
 
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_above="@id/signin"
+        android:layout_marginBottom="65dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        />
+
 
     <EditText
         android:id="@+id/editTextTextPassword"
-        android:layout_width="300dp"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPassword"
         android:layout_above="@id/signin"
-        android:layout_marginHorizontal="70dp"
         android:layout_marginBottom="15dp"
-
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
         />
 
 
@@ -31,9 +45,10 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_above="@id/signin"
-        android:layout_marginHorizontal="100dp"
         android:layout_marginBottom="170dp"
-        android:background="@drawable/image1" />
+        android:background="@drawable/image1"
+        android:layout_centerHorizontal="true"
+        />
 
 
     <Button
@@ -73,15 +88,36 @@
         android:layout_height="wrap_content"
         android:text="版本1.00v"
 
-        android:textSize="17dp"
+        android:textSize="15dp"
         android:layout_alignParentBottom="true"
         android:gravity="center"
-        android:textStyle="bold"
+        android:textStyle="italic"
         android:layout_alignParentRight="true"
         android:textColor="@color/white"
+        android:layout_marginRight="15dp"
         ></TextView>
 
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@id/signin"
+        android:layout_marginBottom="72dp"
+        android:layout_toLeftOf="@id/editTextTextPassword"
+        app:srcCompat="@drawable/user" />
 
+    <ImageView
+        android:id="@+id/pass"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_toLeftOf="@id/editTextTextPassword"
+        android:layout_above="@id/signin"
+        android:layout_marginBottom="22dp"
+
+        app:srcCompat="@drawable/pass"
+
+        />
 
 
 </RelativeLayout>
