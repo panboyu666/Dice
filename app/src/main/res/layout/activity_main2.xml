@@ -6,51 +6,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2"
-    android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <pl.droidsonroids.gif.GifImageView
-
-            android:id="@+id/gif"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/one" />
-        <pl.droidsonroids.gif.GifImageView
-
-            android:id="@+id/gif2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/one" />
-        <pl.droidsonroids.gif.GifImageView
-
-            android:id="@+id/gif3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/one" />
-        <pl.droidsonroids.gif.GifImageView
-
-            android:id="@+id/gif4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/one" />
-
-    </LinearLayout>
-
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:background="@drawable/backgroun2"
     >
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="擲骰子"
-        android:onClick="method"
-        />
+
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/npc"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/npc"
+
+            android:layout_centerHorizontal="true"
+            />
+
+      <Button
+          android:id="@+id/button"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="擲骰子"
+          android:onClick="method"
+          android:layout_alignParentBottom="true"
+
+          />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="150dp"
+            android:layout_marginHorizontal="45dp"
+            >
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/gif"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/one"
+                android:layout_weight="1"
+                />
+
+            <pl.droidsonroids.gif.GifImageView
+
+                android:id="@+id/gif2"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/one"
+                android:layout_weight="1" />
+
+            <pl.droidsonroids.gif.GifImageView
+
+                android:id="@+id/gif3"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/one"
+                android:layout_weight="1"/>
+
+            <pl.droidsonroids.gif.GifImageView
+
+                android:id="@+id/gif4"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:src="@drawable/one"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="40dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_marginTop="250dp"
+            />
+
+
+    </RelativeLayout>
+
+
 
 
 </LinearLayout>
