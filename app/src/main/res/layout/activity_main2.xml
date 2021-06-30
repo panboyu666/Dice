@@ -5,15 +5,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
+    tools:context="pan.bu.yu.MainActivity2"
     android:orientation="vertical"
-    android:background="@drawable/background3"
+    android:background="@drawable/x03"
+
     >
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp">
+        android:layout_marginBottom="2dp">
 
 
         <pl.droidsonroids.gif.GifImageView
@@ -26,15 +27,17 @@
 
         <Button
             android:id="@+id/button"
-            style="@style/CardView"
-            android:layout_width="match_parent"
+
+            android:layout_width="280dp"
             android:layout_height="60dp"
             android:layout_alignParentBottom="true"
-            android:background="@drawable/buttonbackground"
+            android:background="@drawable/buttonb"
             android:onClick="method"
-            android:text="ROLL"
+            android:layout_centerHorizontal="true"
+            android:text="擲骰子"
             android:textColor="@color/white"
-            android:textSize="40dp" />
+            android:fontFamily="@font/cfont"
+            android:textSize="55dp" />
 
 
         <ImageView
@@ -152,16 +155,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="120dp"
+            android:layout_marginTop="130dp"
             android:text="莊家點數"
             android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:textSize="30dp"
+            android:fontFamily="@font/cfont"
+            />
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_above="@id/button"
-            android:layout_marginBottom="160dp">
+            android:layout_marginBottom="161dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -205,17 +211,18 @@
 
         </RelativeLayout>
 
-
         <TextView
+
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/button"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="140dp"
+            android:layout_marginBottom="135dp"
             android:text="點數"
             android:textColor="@color/white"
-            android:textSize="25dp"
+            android:textSize="30dp"
+            android:fontFamily="@font/cfont"
 
             />
 
@@ -229,8 +236,9 @@
             android:layout_marginBottom="240dp"
             android:text="投注金額:0元"
             android:textColor="#FFDC35"
-            android:textSize="25dp"
+            android:textSize="35dp"
             android:textStyle="bold"
+            android:fontFamily="@font/cfont" />
             />
 
         <TextView
@@ -243,22 +251,32 @@
             android:layout_marginBottom="320dp"
             android:text=""
             android:textColor="#FFDC35"
-            android:textSize="30dp"
+            android:textSize="45dp"
             android:textStyle="bold"
+            android:fontFamily="@font/cfont"
             />
 
         <TextView
+            android:text="錢包:"
             android:id="@+id/textmoney"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@id/button"
             android:layout_marginLeft="30dp"
-            android:layout_marginBottom="10dp"
-            android:text="錢包:"
+            android:layout_marginBottom="0dp"
             android:textColor="#FFFF93"
-            android:textSize="20dp"
-            android:textStyle="italic"
+            android:textSize="33dp"
+
+            android:fontFamily="@font/cfont" />
             />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/npcme"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/button"
+            android:layout_marginBottom="5dp"
+             />
 
                 <FrameLayout
                     android:layout_width="280dp"

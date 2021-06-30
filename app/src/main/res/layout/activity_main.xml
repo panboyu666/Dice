@@ -8,132 +8,132 @@
 
     android:layout_height="match_parent"
 
-    tools:context=".MainActivity"
-    android:background="@drawable/background1">
-
-
-    <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:layout_above="@id/signin"
-        android:layout_marginBottom="65dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        />
-
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:layout_above="@id/signin"
-        android:layout_marginBottom="15dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        />
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_above="@id/signin"
-        android:layout_marginBottom="170dp"
-        android:background="@drawable/image1"
-        android:layout_centerHorizontal="true"
-        />
-
-
-    <Button
-        android:id="@+id/signin"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginBottom="230dp"
-        android:background="@drawable/buttonbackground"
-        android:text="登入"
-        android:textSize="20dp"
-        android:textStyle="normal"
-        android:textColor="@color/white"
-
-        />
-
-
-    <Button
-        android:id="@+id/signup"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginBottom="158dp"
-        android:background="@drawable/buttonbackground"
-        android:text="註冊"
-        android:textSize="20dp"
-        android:textStyle="normal"
-        android:textColor="@color/white"
-
-        />
-    <Button
-        android:id="@+id/tourist"
-        android:layout_width="wrap_content"
-        android:layout_height="67dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginHorizontal="15dp"
-        android:layout_marginBottom="90dp"
-        android:background="@drawable/buttonbackground"
-        android:text="遊客試玩"
-        android:textSize="20dp"
-        android:textStyle="normal"
-        android:textColor="@color/white"
-        android:onClick="tourist"
-        />
+    tools:context="pan.bu.yu.MainActivity"
+    android:background="@drawable/x07">
 
 
 
-    <TextView
-        android:id="@+id/B"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="版本1.00v"
 
-        android:textSize="15dp"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:textStyle="italic"
-        android:layout_alignParentRight="true"
-        android:textColor="@color/white"
-        android:layout_marginRight="15dp"
-        ></TextView>
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="65dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white" />
 
-    <ImageView
-        android:id="@+id/user"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_above="@id/signin"
-        android:layout_marginBottom="72dp"
-        android:layout_toLeftOf="@id/editTextTextPassword"
-        app:srcCompat="@drawable/user" />
 
-    <ImageView
-        android:id="@+id/pass"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/white"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/white" />
 
-        android:layout_toLeftOf="@id/editTextTextPassword"
-        android:layout_above="@id/signin"
-        android:layout_marginBottom="22dp"
 
-        app:srcCompat="@drawable/pass"
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_above="@id/signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="170dp"
+            android:background="@drawable/image1" />
 
-        />
+
+        <Button
+            android:id="@+id/signin"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="230dp"
+            android:background="@drawable/buttona"
+            android:fontFamily="@font/cfont"
+            android:text="登入"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="normal"
+            android:onClick="signinMethod"
+            />
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="158dp"
+            android:background="@drawable/buttona"
+            android:fontFamily="@font/cfont"
+            android:text="註冊"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="normal"
+            android:onClick="signupMethod"
+            />
+
+        <Button
+            android:id="@+id/tourist"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/buttona"
+            android:fontFamily="@font/cfont"
+            android:onClick="tourist"
+            android:text="遊客試玩"
+            android:textColor="@color/white"
+            android:textSize="45dp"
+            android:textStyle="normal" />
+
+
+        <TextView
+            android:id="@+id/B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="版本1.00v"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic"></TextView>
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@id/signin"
+            android:layout_marginBottom="72dp"
+            android:layout_toLeftOf="@id/editTextTextPassword"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/pass"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:layout_above="@id/signin"
+            android:layout_marginBottom="22dp"
+            android:layout_toLeftOf="@id/editTextTextPassword"
+
+            app:srcCompat="@drawable/pass"
+
+            />
 
 
 </RelativeLayout>

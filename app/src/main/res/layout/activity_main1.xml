@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="pan.bu.yu.MainActivity1"
+    android:background="@drawable/x07">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/or" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="創建人物"
+            android:textSize="48dp"
+            android:fontFamily="@font/cfont"
+            android:layout_centerInParent="true"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#6C6C6C"
+            android:layout_marginTop="45dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="角色名稱:"
+            android:textSize="25dp"
+            android:fontFamily="@font/cfont"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/text1"
+            android:layout_centerHorizontal="true"
+            android:inputType="text"
+            android:layout_marginTop="107dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:text=""
+            android:textSize="22dp"
+            android:fontFamily="@font/cfont"
+            android:background="@drawable/edit_bg"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="87dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="137dp"
+            android:background="@drawable/buttonb"
+            android:fontFamily="@font/cfont"
+            android:onClick="checkingID"
+            android:text="檢查是否可用"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="200dp"
+            android:text="確定"
+            android:onClick="nextMethod"
+            android:fontFamily="@font/cfont"
+            android:textSize="30dp"
+            android:background="@drawable/buttonb"
+            />
+
+        <TextView
+            android:id="@id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/button"
+            android:layout_marginTop="150dp"
+            android:text=""
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
